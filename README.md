@@ -104,19 +104,19 @@ python manage.py test
 
 ```mermaid
 graph TB
-    A[Django Project: config/] --> B[signals_demo App]
-    A --> C[rectangle_demo App]
+    A["Django Project: config/"] --> B["signals_demo App"]
+    A --> C["rectangle_demo App"]
     
-    B --> D[models.py<br/>TestModel]
-    B --> E[signals.py<br/>Signal Handlers]
-    B --> F[Management Commands]
+    B --> D["models.py<br/>TestModel"]
+    B --> E["signals.py<br/>Signal Handlers"]
+    B --> F["Management Commands"]
     
-    F --> G[test_sync_signals.py]
-    F --> H[test_thread_signals.py]
-    F --> I[test_transaction_signals.py]
+    F --> G["test_sync_signals.py"]
+    F --> H["test_thread_signals.py"]
+    F --> I["test_transaction_signals.py"]
     
-    C --> J[rectangle.py<br/>Rectangle Class]
-    C --> K[test_rectangle.py<br/>Demo Command]
+    C --> J["rectangle.py<br/>Rectangle Class"]
+    C --> K["test_rectangle.py<br/>Demo Command"]
     
     style A fill:#092E20,color:#fff
     style B fill:#44B78B,color:#fff
@@ -188,7 +188,7 @@ print(f"Total time: {end_time - start_time:.2f}s")
 
 ```mermaid
 graph LR
-    A[Main Thread<br/>ID: 24424] -->|creates object| B[Signal Handler<br/>ID: 24424]
+    A["Main Thread<br/>ID: 24424"] -->|creates object| B["Signal Handler<br/>ID: 24424"]
     B -->|returns to| A
     
     style A fill:#4A90E2,color:#fff
@@ -288,10 +288,10 @@ final_count = TestModel.objects.filter(name="Transaction Test").count()
 
 ```mermaid
 graph TD
-    A[Rectangle Instance<br/>length=10, width=5] --> B[Start Iteration]
-    B --> C[First yield:<br/>{'length': 10}]
-    C --> D[Second yield:<br/>{'width': 5}]
-    D --> E[Iteration Complete]
+    A["Rectangle Instance<br/>length=10, width=5"] --> B["Start Iteration"]
+    B --> C["First yield:<br/>{'length': 10}"]
+    C --> D["Second yield:<br/>{'width': 5}"]
+    D --> E["Iteration Complete"]
     
     style A fill:#FF6B6B,color:#fff
     style C fill:#4ECDC4,color:#fff
@@ -513,6 +513,7 @@ All requirements from the assignment PDF have been successfully implemented and 
 
 ## 👤 Author
 
+**Ajinkya Ghuge**  
 **Submitted for:** Accuknox Django Trainee Position  
 **Date:** October 2026
 
